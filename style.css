@@ -68,11 +68,13 @@ header {
   font-size: 48px;
   font-weight: 700;
   max-width: 28rem;
+  color: #232c35;
 }
 .info-container p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   max-width: 22rem;
+  color: #4f4f4f;
 }
 .img-container {
   display: flex;
@@ -166,6 +168,10 @@ header {
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
+  color: #232c35;
+}
+.more-choice p {
+  color: #4f4f4f;
 }
 .choices-logo1 {
   max-width: 100%;
@@ -240,6 +246,20 @@ input {
 .footer-containers {
   padding-bottom: 55px;
 }
+.footer-containers h3 {
+  color: #232c35;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41.22px;
+  text-align: left;
+}
+.footer-containers p {
+  color: #233533;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
 .footer-ending {
   display: flex;
   justify-content: space-between;
@@ -271,20 +291,33 @@ input {
 }
 @media (max-width: 600px) {
   .info-container h2 {
-    font-size: 20px;
+    font-size: 24px;
+    text-align: center;
   }
-  .footer-ending{
-  padding: 30px 1rem;
-}
+  .info-container{
+    text-align: center;
+  }
+  .first-detail h4 {
+    font-size: 24px;
+  }
+  .footer-ending {
+    padding: 30px 1rem;
+  }
+  .more-choice-heading{
+    font-size: 24px;
+  }
+  .footer-details h3{
+    font-size: 24px;
+  }
 }
 @media (max-width: 400px) {
   header {
     padding: 15px 40px;
   }
-  input{
-  padding: 10px 30px;
-}
-.footer-ending{
-  font-size: 13px;
-}
+  input {
+    padding: 10px 30px;
+  }
+  .footer-ending {
+    font-size: 13px;
+  }
 }
