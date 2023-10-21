@@ -236,6 +236,7 @@ input {
   border: none;
   cursor: pointer;
 }
+/* Footer */
 .footer-containers {
   padding-bottom: 55px;
 }
@@ -249,6 +250,7 @@ input {
   font-weight: 400;
   line-height: 9px;
 }
+/* Footer */
 /* Details Section */
 @media (max-width: 930px) {
   .fa-bars {
