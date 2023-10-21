@@ -106,9 +106,10 @@ header {
 }
 .first-detail p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 23px;
   max-width: 28rem;
+  color: #E0E0E0;
 }
 .img-details {
   display: flex;
