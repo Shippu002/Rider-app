@@ -29,7 +29,6 @@ header {
 .nav-item {
   font-weight: 700;
   font-size: 14px;
-  line-height: 17.6px;
 }
 .logo {
   display: flex;
@@ -42,7 +41,6 @@ header {
 }
 .logo-name {
   font-weight: 700;
-  line-height: 50px;
   font-size: 30px;
 }
 .fa-bars {
@@ -90,6 +88,8 @@ header {
   padding-top: 80px;
   background-color: rebeccapurple;
   color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .first-detail {
   display: flex;
@@ -101,13 +101,11 @@ header {
 .first-detail h4 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 41px;
   max-width: 35rem;
 }
 .first-detail p {
   font-size: 20px;
   font-weight: 400;
-  line-height: 23px;
   max-width: 28rem;
   color: #E0E0E0;
 }
@@ -163,22 +161,29 @@ header {
   gap: 0.8px;
   font-size: 18px;
   font-weight: 500;
-  line-height: 22px;
 }
 .more-choice h5 {
   font-size: 20px;
   font-weight: 700;
-  line-height: 23px;
   color: #232c35;
+  padding-bottom: 20px;
 }
 .more-choice p {
   color: #4f4f4f;
+  padding-bottom: 20px;
 }
-.choices-logo1 {
-  max-width: 100%;
+.choices-logo1{
+  margin-bottom: 10px;
 }
-.choices-logo41 {
-  max-width: 4rem;
+.choices-logo1 img {
+  width: 50px;
+  height: 50px;
+}
+.choices-logo41 img{
+  /* max-width: 4rem; */
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
 }
 .more-choice-heading {
   text-align: center;
@@ -206,13 +211,11 @@ footer {
   max-width: 30rem;
   font-size: 20px;
   font-weight: 400;
-  line-height: 23px;
   text-align: center;
 }
 .footer-details h3 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 41px;
   text-align: left;
 }
 .subscribe-container {
@@ -258,7 +261,6 @@ input {
   color: #233533;
   font-size: 20px;
   font-weight: 400;
-  line-height: 23px;
   text-align: center;
 }
 .footer-ending {
@@ -269,7 +271,6 @@ input {
   color: #fff;
   font-size: 11px;
   font-weight: 400;
-  line-height: 9px;
 }
 /* Footer */
 /* Details Section */
@@ -287,28 +288,85 @@ input {
     flex-direction: column;
   }
   .details {
-    font-size: 25px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .beginning-choices {
+  background: linear-gradient(
+    to bottom,
+    #a792fe12 0%,
+    #a792fe12 50%,
+    white 50%,
+    white 100%
+  );
+  background-color: #a792fe12;
+}
+.choices-logo1{
+    margin-top: 10px;
   }
 }
 @media (max-width: 600px) {
+  .logo-name{
+    font-size: 15px;
+  }
   .info-container h2 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+  }
+  .info-container p{
+    font-size: 15px;
   }
   .info-container{
     text-align: center;
   }
   .first-detail h4 {
-    font-size: 24px;
+    font-size: 18px;
   }
+  .first-detail p{
+    font-size: 15px;
+  }
+  .details-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
   .footer-ending {
     padding: 30px 1rem;
+    flex-direction: column;
+    text-align: center;
   }
+  .more-choices{
+    flex-direction: column;
+    text-align: center;
+  }
+  .choices{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .more-choices{
+    flex-wrap: nowrap;
+  }
+  
+  /* .more-choice{
+    flex-direction: row;
+  } */
   .more-choice-heading{
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .more-choice h5{
+    font-size: 15px;
+  }
+  .more-choice p{
+    font-size: 14px;
   }
   .footer-details h3{
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .footer-details p{
+    font-size: 14px;
   }
 }
 @media (max-width: 400px) {
@@ -320,5 +378,10 @@ input {
   }
   .footer-ending {
     font-size: 13px;
+  }
+}
+@media (max-width: 250px) {
+  input {
+    padding: 10px 10px;
   }
 }
